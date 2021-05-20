@@ -2,6 +2,13 @@
 <html lang="ru">
 
 <head>
+    <?php
+        exec("node node_server/app.js");
+        if ($_GET['run']) {
+            # This code will run if ?run=true is set.
+        }
+    ?>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -94,7 +101,7 @@
                 <ul class="header__menu">
                     <li class="active"><a class="js-scroll-link" href="javascript:;" data-link="0">HOME</a></li>
                     <li><a class="js-scroll-link" href="javascript:;" data-link="1">Projects</a></li>
-                    <li><a class="js-scroll-link" href="javascript:;" data-link="2">awwards</a></li>
+                    <li><a class="js-scroll-link" href="javascript:;" data-link="2">awards</a></li>
                     <li><a class="js-scroll-link" href="javascript:;" data-link="3">testimonials</a></li>
                     <li><a class="js-scroll-link" href="javascript:;" data-link="4">experience</a></li>
                     <li><a class="js-scroll-link" href="javascript:;" data-link="5">blog</a></li>
