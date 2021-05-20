@@ -1119,17 +1119,17 @@ $(function (){
         });
         if (valid){
             let url = '/php/mail.php'
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: form.serialize(),
-                success: function(data){
-                    alert(data);
-                },
-                error: function (data){
-                    alert(data);
-                }
-            });
+            // $.ajax({
+            //     type: "POST",
+            //     url: url,
+            //     data: form.serialize(),
+            //     success: function(data){
+            //         alert(data);
+            //     },
+            //     error: function (data){
+            //         alert(data);
+            //     }
+            // });
         } else {
             alert('Enter the data in the required fields');
         }
