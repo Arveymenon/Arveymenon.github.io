@@ -7,19 +7,28 @@ const navigation = [
 	{ name: "Contact", href: "/contact" },
 ];
 
+const neonText = {
+	"color": "#fff", 
+	"text-shadow": "0 0 0px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 0px #860eff, 0 0 2px #0fa, 0 0 20px #860eff, 0 0 102px #0fa, 0 0 151px #340068"
+}
+
 export default function Home() {
 	return (
 		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
 			<nav className="my-16 animate-fade-in">
 				<ul className="flex flex-wrap items-center justify-center gap-4">
-					{navigation.map((item) => (
-						<Link
-							key={item.href}
-							href={item.href}
-							className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
-						>
-							{item.name}
-						</Link>
+					{navigation.map((item, index) => (
+						<>
+							<Link
+								key={item.href}
+								href={item.href}
+								className="text-2xl duration-500 text-zinc-500 hover:text-zinc-300"
+							>
+								{item.name}
+							</Link>
+							{ index == 0 && <span className="text-4xl duration-500 text-zinc-500 hover:text-zinc-300">|</span> }
+						</>
+
 					))}
 				</ul>
 			</nav>
@@ -28,33 +37,21 @@ export default function Home() {
 				className="absolute inset-0 -z-10 animate-fade-in"
 				quantity={100}
 			/>
-			<h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-				chronark
+			<h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text neonText-1">
+				Arulvinayak
 			</h1>
 
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-500 mx-6">
-					Hi, my name is Andreas, I'm building serverless and open source
-					solutions at{" "}
+					Hi, my name is Arulvinayak Menon, I'm building amazing web3 application and open source solutions. Checkout my {" "}
 					<Link
 						target="_blank"
-						href="https://upstash.com"
+						href="https://github.com/Arveymenon"
 						className="underline duration-500 hover:text-zinc-300"
-					>
-						Upstash
+					> 
+						Github 
 					</Link>
-
-					
-					<wbr /> and working on{" "}
-					<Link
-						target="_blank"
-						href="https://unkey.dev"
-						className="underline duration-500 hover:text-zinc-300"
-					>
-						unkey.dev
-					</Link>{" "}
-					at night.
 				</h2>
 			</div>
 		</div>
