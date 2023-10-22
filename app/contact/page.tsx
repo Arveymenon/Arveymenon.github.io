@@ -7,21 +7,24 @@ import { Card } from "../components/card";
 const socials = [
 	{
 		icon: <Twitter size={20} />,
-		href: "https://twitter.com/chronark_",
+		href: "https://twitter.com/arveymenon",
 		label: "Twitter",
-		handle: "@chronark_",
+		handle: "@arveymenon",
+		classHandle: "neonText-red"
 	},
 	{
 		icon: <Mail size={20} />,
-		href: "mailto:dev@chronark.com",
+		href: "mailto:arveymenon@gmail.com",
 		label: "Email",
-		handle: "dev@chronark.com",
+		handle: "arveymenon@gmail.com",
+		classHandle: "neonText-purple"
 	},
 	{
 		icon: <Github size={20} />,
-		href: "https://github.com/chronark",
+		href: "https://github.com/Arveymenon",
 		label: "Github",
-		handle: "chronark",
+		handle: "arveymenon",
+		classHandle: "neonText-green"
 	},
 ];
 
@@ -42,11 +45,11 @@ export default function Example() {
 									className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
 									aria-hidden="true"
 								/>
-								<span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
+								<span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange neonText-purple">
 									{s.icon}
 								</span>{" "}
 								<div className="z-10 flex flex-col items-center">
-									<span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
+									<span className={`lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display ${s.classHandle}`}>
 										{s.handle}
 									</span>
 									<span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
