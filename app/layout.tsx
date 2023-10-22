@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "chronark.com",
-		template: "%s | chronark.com",
+		default: "Arulvinayak Menon",
+		template: "%s | Arulvinayak Menon",
 	},
-	description: "Software engineer at upstash.com and founder of planetfall.io",
+	description: "Software engineer",
 	openGraph: {
-		title: "chronark.com",
+		title: "Arulvinayak Menon",
 		description:
-			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://chronark.com",
-		siteName: "chronark.com",
+			"Software engineer",
+		url: "https://arveymenon-github-io.vercel.app/",
+		siteName: "Arulvinayak Menon",
 		images: [
 			{
-				url: "https://chronark.com/og.png",
+				url: "https://arveymenon-github-io.vercel.app/og.png",
 				width: 1920,
 				height: 1080,
 			},
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "Chronark",
+		title: "Arveymenon",
 		card: "summary_large_image",
 	},
 	icons: {
