@@ -10,22 +10,6 @@ export const metadata: Metadata = {
 		template: "%s | Arulvinayak Menon",
 	},
 	description: "Software engineer",
-	openGraph: {
-		title: "Arulvinayak Menon",
-		description:
-			"Software engineer",
-		url: "https://arveymenon-github-io.vercel.app/",
-		siteName: "Arulvinayak Menon",
-		images: [
-			{
-				url: "https://arveymenon-github-io.vercel.app/og.png",
-				width: 1920,
-				height: 1080,
-			},
-		],
-		locale: "en-US",
-		type: "website",
-	},
 	robots: {
 		index: true,
 		follow: true,
@@ -36,10 +20,6 @@ export const metadata: Metadata = {
 			"max-image-preview": "large",
 			"max-snippet": -1,
 		},
-	},
-	twitter: {
-		title: "Arveymenon",
-		card: "summary_large_image",
 	},
 	icons: {
 		shortcut: "/favicon.png",
