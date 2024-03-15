@@ -35,7 +35,6 @@ export default function Home() {
 								</Link>
 								{ index == 0 && <span className="text-4xl duration-500 text-zinc-500 hover:text-zinc-300">|</span> }
 							</>
-
 						))}
 					</ul>
 				</nav>

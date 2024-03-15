@@ -37,10 +37,10 @@ module.exports = {
 					"radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
 			},
 			animation: {
-				"fade-in": "fade-in 3s ease-in-out forwards",
-				"title": "title 3s ease-in-out forwards",
-				"fade-left": "fade-left 3s ease-in-out forwards",
-				"fade-right": "fade-right 3s ease-in-out forwards",
+				"fade-in": "fade-in 5s ease-in-out forwards",
+				"title": "title 6s ease-in-out forwards",
+				"fade-left": "fade-left 6s ease-in-out forwards",
+				"fade-right": "fade-right 6s ease-in-out forwards",
 			},
 			keyframes: {
 				"fade-in": {
@@ -61,6 +61,10 @@ module.exports = {
 					},
 					"30%": {
 						transform: "translateX(0%)",
+						opacity: "0%",
+					},
+					"75%": {
+						transform: "translateX(0%)",
 						opacity: "100%",
 					},
 					"100%": {
@@ -72,8 +76,11 @@ module.exports = {
 						transform: "translateX(-100%)",
 						opacity: "0%",
 					},
-
 					"30%": {
+						transform: "translateX(0%)",
+						opacity: "0%",
+					},
+					"75%": {
 						transform: "translateX(0%)",
 						opacity: "100%",
 					},
@@ -84,18 +91,14 @@ module.exports = {
 				title: {
 					"0%": {
 						"line-height": "0%",
-						// "letter-spacing": "0.25em",
+						"letter-spacing": "0.25em",
 						opacity: "0",
 					},
-					"25%": {
-						"line-height": "25%",
-						opacity: "25%",
+					"75%": {
+						"line-height": "0%",
+						"letter-spacing": "0.25em",
+						opacity: "0",
 					},
-					"80%": {
-						"line-height": "80%",
-						opacity: "80%",
-					},
-
 					"100%": {
 						"line-height": "100%",
 						opacity: "100%",

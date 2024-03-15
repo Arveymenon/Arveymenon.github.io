@@ -103,7 +103,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 				<div className="mx-auto max-w-7xl px-6 lg:px-8 text-center flex flex-col items-center">
 					<div className="mx-auto max-w-2xl lg:mx-0">
 						<h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl font-display neonText-1
-							duration-1000 cursor-default text-edge-outline animate-title">
+							duration-1000 cursor-default text-edge-outline animate-title2">
 							{project.title}
 						</h1>
 						<p className="mt-6 text-lg leading-8 text-zinc-300 cursor-default
