@@ -39,6 +39,7 @@ module.exports = {
 			animation: {
 				"fade-in": "fade-in 5s ease-in-out forwards",
 				"title": "title 6s ease-in-out forwards",
+				"title2": "title 3s ease-in-out forwards",
 				"fade-left": "fade-left 6s ease-in-out forwards",
 				"fade-right": "fade-right 6s ease-in-out forwards",
 			},

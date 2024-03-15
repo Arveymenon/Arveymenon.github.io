@@ -7,6 +7,16 @@ import { Article } from "./article";
 import { Redis } from "@upstash/redis";
 import { Eye } from "lucide-react";
 
+/*
+*	*	*	*	*	*	*	
+*  Projects to be added: 
+*  1. AI assistant: https://github.com/Arveymenon/nextjs-assistant
+*  2. AI content: https://github.com/Arveymenon/ai-content-generator
+*  3. 
+*	*	*	*	*	*	
+*/
+
+
 const redis = Redis.fromEnv();
 
 export const revalidate = 60;
